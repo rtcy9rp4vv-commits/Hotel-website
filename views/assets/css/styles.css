@@ -17,6 +17,18 @@
     color: var(--verde-principal) !important;
 }
 
+/*Logo del Hotel en el Navbar */
+.logo-navbar {
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+}
+
+.brand-verde {
+    color: #2e7d32;
+    font-size: 1.15rem;
+}
+
 /* Botones Naranja (Call to Action principal) */
 .btn-naranja {
     background-color: var(--naranja-accent);
