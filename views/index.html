@@ -1,25 +1,221 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hotel Mundo De Perezosos</title> 
-    <!-- Enlace al CSS -->
-    <link rel="stylesheet" href="css/styles.css">
-    <!--Uso de Bootstrap desde internet-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> 
-     <!-- Enlace al font awesome  -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Mundo De Perezosos - Inicio</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Íconos de FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tus Estilos Personalizados (Verde/Naranja/Negro/Blanco) -->
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body>
-    <!--Barra de navegación-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!--Barra de navegación de Bootstrap-->
-        <div class="container"> <!--Contenedor de la barra de navegación-->
-            <a class="navbar-brand" href="#">Hotel Mundo De Perezosos</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+<body class="bg-white">
+
+
+    <!-- 1. ENCABEZADO  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold brand-verde fs-4" href="index.html">
+                <i class="fa-solid fa-tree me-2"></i>Hotel Mundo De Perezosos
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-semibold text-verde" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="habitaciones.html">Habitaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="contacto.html">Contacto</a>
+                    </li>
+                    <!-- Enlace directo para la parte de Admin (Integrante 5) -->
+                    <li class="nav-item ms-lg-3">
+                        <a class="nav-link text-muted small" href="login.html"><i class="fa-solid fa-lock me-1"></i>Acceso Admin</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
+
+    <!-- ========================================== -->
+    <!-- 2. CARRUSEL DE BIENVENIDA (Héroe)         -->
+    <!-- ========================================== -->
+    <header id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+ <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+            <img src="Assets/img/Principal.jpg" class="d-block w-100" style="height: 70vh; object-fit: cover;" alt="Hotel Mundo De Perezosos">
+            <div class="carousel-caption d-none d-md-block">
+                <h1 class="display-4 fw-bold">Bienvenido al Descanso Natural</h1>
+                <p class="lead">Un oasis de tranquilidad rodeado de naturaleza.</p>
+                <a href="contacto.html" class="btn btn-naranja btn-lg rounded-pill px-4">Reserva Ahora</a>
+            </div>
+        </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item" style="height: 75vh; min-height: 450px; background: url('assets/images/slide2.jpg') center/cover no-repeat;">
+                <div class="carousel-caption d-flex flex-column justify-content-center h-100 bg-negro bg-opacity-60 rounded p-4">
+                    <h1 class="display-3 fw-bold text-white">Habitaciones de Ensueño</h1>
+                    <p class="lead text-light">Diseñadas para brindarte confort supremo en medio del bosque.</p>
+                    <div>
+                        <a href="habitaciones.html" class="btn btn-naranja btn-lg rounded-pill px-5 shadow">Ver Habitaciones</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </header>
+
+    <!-- ========================================== -->
+    <!-- 3. PRESENTACIÓN E HISTORIA (Blanco / Verde)-->
+    <!-- ========================================== -->
+    <section class="container my-5 py-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <span class="badge text-white mb-2 px-3 py-2 fw-bold text-uppercase" style="background-color: #E65100;">Nuestra Esencia</span>
+                <h2 class="display-5 fw-bold text-verde mb-3">Un Refugio de Paz y Naturaleza</h2>
+                <p class="lead text-secondary">En Hotel Mundo De Perezosos nos dedicamos a ofrecer una experiencia en perfecta armonía con el entorno natural.</p>
+                <p class="text-muted">Fundado como un proyecto de conservación y hospitalidad, brindamos el espacio ideal para desconectarse de la rutina diaria. Sumérgete en el ritmo pausado de la naturaleza con todas las comodidades modernas.</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="assets/images/historia.jpg" alt="Historia del Hotel" class="img-fluid rounded-4 shadow-lg border border-3 border-success">
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 4. TARJETAS DE ACCESO RÁPIDO               -->
+    <!-- ========================================== -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-6 fw-bold text-verde">Explora Nuestro Sitio</h2>
+                <p class="text-muted">Descubre todo lo que tenemos preparado para tu próxima estadía</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Tarjeta 1: Habitaciones -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                        <img src="assets/images/card-habitaciones.jpg" class="card-img-top" style="height: 220px; object-fit: cover;" alt="Habitaciones">
+                        <div class="card-body d-flex flex-column p-4">
+                            <h5 class="card-title fw-bold text-dark">Nuestras Habitaciones</h5>
+                            <p class="card-text text-muted">Alojamiento confortable con vistas espectaculares al jardín y la montaña.</p>
+                            <a href="habitaciones.html" class="btn btn-verde-outline mt-auto w-100 rounded-pill">Ver Opciones</a>
+                        </div>
+                    </div>
+                </div>
+        <!-- Tarjeta 2: Servicios (Con Carrusel de Varias Imágenes) -->
+<div class="col-md-4">
+    <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+        
+        <!-- Mini Carrusel de Imágenes -->
+        <div id="carouselServiciosCard" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <!-- Indicadores (puntos) -->
+            <div class="carousel-indicators mb-1">
+                <button type="button" data-bs-target="#carouselServiciosCard" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carouselServiciosCard" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselServiciosCard" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- Lista de Imágenes -->
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="Assets/img/card-servicios-1.jpg" class="d-block w-100" style="height: 220px; object-fit: cover;" alt="Tour por la Naturaleza">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="Assets/img/card-servicios-2.jpg" class="d-block w-100" style="height: 220px; object-fit: cover;" alt="Spa y Relajación">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="Assets/img/card-servicios-3.jpg" class="d-block w-100" style="height: 220px; object-fit: cover;" alt="Gastronomía Local">
+                </div>
+                   <div class="carousel-item" data-bs-interval="3000">
+                    <img src="Assets/img/card-servicios-4.jpg" class="d-block w-100" style="height: 220px; object-fit: cover;" alt="Gastronomía Local">
+                </div>
+            </div>
+
+            <!-- Botones de navegación (Flechas pequeñas) -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselServiciosCard" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" style="width: 1.2rem; height: 1.2rem;" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselServiciosCard" data-bs-slide="next">
+                <span class="carousel-control-next-icon" style="width: 1.2rem; height: 1.2rem;" aria-hidden="true"></span>
+            </button>
+        </div>
+
+        <!-- Contenido de la Tarjeta -->
+        <div class="card-body d-flex flex-column p-4 text-start">
+            <h5 class="card-title fw-bold text-dark">Tour por la Naturaleza </h5>
+            <p class="card-text text-muted">Descubre los secretos del entorno natural, disfruta de spa, caminatas y experiencias gastronómicas.</p>
+            <a href="servicios.html" class="btn btn-verde-outline mt-auto w-100 rounded-pill">Explorar Tours</a>
+        </div>
+    </div>
+</div>
+                <!-- Tarjeta 3: Contacto -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                        <img src="assets/images/card-contacto.jpg" class="card-img-top" style="height: 220px; object-fit: cover;" alt="Contacto">
+                        <div class="card-body d-flex flex-column p-4">
+                            <h5 class="card-title fw-bold text-dark">Ubicación y Reservas</h5>
+                            <p class="card-text text-muted">Ponte en contacto para consultar disponibilidad y planear tu aventura.</p>
+                            <a href="contacto.html" class="btn btn-naranja mt-auto w-100 rounded-pill">Reservar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 5. PIE DE PÁGINA / FOOTER (Negro / Blanco) -->
+    <!-- ========================================== -->
+    <footer class="bg-negro text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5 class="fw-bold text-verde mb-3"><i class="fa-solid fa-tree me-2"></i>Hotel Mundo De Perezosos</h5>
+                    <p class="small text-secondary">Tu destino ideal para descansar, recargar energías y disfrutar del entorno silvestre.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold text-white mb-3">Navegación</h5>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><a href="index.html" class="text-white-50 text-decoration-none">Inicio</a></li>
+                        <li class="mb-2"><a href="habitaciones.html" class="text-white-50 text-decoration-none">Habitaciones</a></li>
+                        <li class="mb-2"><a href="servicios.html" class="text-white-50 text-decoration-none">Servicios</a></li>
+                        <li class="mb-2"><a href="contacto.html" class="text-white-50 text-decoration-none">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold text-white mb-3">Contáctanos</h5>
+                    <p class="small text-white-50 mb-2"><i class="fa-solid fa-envelope me-2 text-warning"></i>info@mundodeperezosos.com</p>
+                    <p class="small text-white-50 mb-2"><i class="fa-solid fa-phone me-2 text-warning"></i>+506 2000-0000</p>
+                    <p class="small text-white-50"><i class="fa-solid fa-location-dot me-2 text-warning"></i>La Fortuna, Costa Rica</p>
+                </div>
+            </div>
+            <hr class="border-secondary my-4">
+            <div class="text-center small text-white-50">
+                &copy; 2026 Hotel Mundo De Perezosos. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
