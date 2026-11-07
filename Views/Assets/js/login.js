@@ -7,6 +7,7 @@ const password =document.getElementById("password").value;
 
 if (usuario === "admin" && password === "1234"){
 alert("Inicio de Sesión correcto");
+window.location.href="dashboard.html";
 }else {
     alert("El usuario o contraseña son incorrectos")
 }
