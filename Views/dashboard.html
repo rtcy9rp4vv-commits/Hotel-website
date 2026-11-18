@@ -49,27 +49,78 @@
     <main class="container mt-4">
         <h2>Bienvenido, Administrador</h2>
         <p>Seleccione una opcion para administrar el hotel.</p>
+        
+<div class="row mb-3">
 
+    <div class="col-md-4">
+        <div class="card p-3 text-center">
+            <h5>Tipos de habitación</h5>
+            <h2 class="text-success">3</h2>
+            <p>Disponibles en el catálogo</p>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card p-3 text-center">
+            <h5>Reservas registradas</h5>
+            <h2 class="text-success">3</h2>
+            <p>Reservas de ejemplo</p>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card p-3 text-center">
+            <h5>Reservas confirmadas</h5>
+            <h2 class="text-success">1</h2>
+            <p>Confirmadas en la tabla</p>
+        </div>
+    </div>
+
+</div>
+
+        
+<div class="row">
+
+    <div class="col-md-6">
         <section class="card p-3 mb-3">
             <h3>Gestión de Habitaciones</h3>
             <p>Administrar las habitaciones del hotel.</p>
-            <button class="btn btn-success">Administrar</button>
+            <button class="btn btn-success btn-sm"
+                    style="width: 120px; display: inline-block;">
+                Administrar
+            </button>
         </section>
+    </div>
+
+    <div class="col-md-6">
         <section class="card p-3 mb-3">
             <h3>Gestión de Reservas</h3>
             <p>Consultar y administrar las reservas del hotel.</p>
-            <button class="btn btn-success">Administrar</button>
+            <button class="btn btn-success btn-sm"
+                    style="width: 120px; display: inline-block;">
+                Administrar
+            </button>
         </section>
+    </div>
+
+</div>
+
+        <div class="row">
+            <div class="col-md-6">
         <section class="card p-3 mb-3">
             <h3>Ocupación mensual del hotel</h3>
             <p>Porcentaje de habitaciones ocupadas durante cada mes.</p>
             <canvas id="graficoOcupacion"></canvas>
         </section>
+            </div>
+            <div class="col-md-6">
         <section class="card p-3 mb-3">
             <h3>Ingresos por temporada</h3>
             <p>Ingresos estimados del hotel durante las diferentes temporadas.</p>
             <canvas id="graficoIngresos"></canvas>
         </section>
+            </div>
+        </div>    
         <section class="card p-3 mb-3">
             <h3>Tipos de reservas mas populares</h3>
             <p>Distribución de las reservas según el tipo de habitación.</p>
