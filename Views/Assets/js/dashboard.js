@@ -9,13 +9,34 @@ const grafico = new Chart(graficoOcupacion, {
         }]
     },
     options: {
-        scales: {
-            y: {
-                beginAtZero: true,
-                max:100
+    plugins: {
+        legend: {
+            labels: {
+                font: {
+                    size: 16
+                }
+            }
+        }
+    },
+    scales: {
+        x: {
+            ticks: {
+                font: {
+                    size: 15
+                }
+            }
+        },
+        y: {
+            beginAtZero: true,
+            max: 100,
+            ticks: {
+                font: {
+                    size: 15
+                }
             }
         }
     }
+}
 });
 const graficoIngresos = document.getElementById("graficoIngresos");
 const ingresos  = new Chart(graficoIngresos, {
@@ -27,6 +48,33 @@ const ingresos  = new Chart(graficoIngresos, {
             data: [1500000, 2500000, 4000000],
             backgroundColor: ["#ffc107", "#17a2b8", "#28a745"]
         }]
+        },
+    options: {
+        plugins: {
+            legend: {
+                labels: {
+                    font: {
+                        size: 16
+                    }
+                }
+            }
+        },
+        scales: {
+            x: {
+                ticks: {
+                    font: {
+                        size: 15
+                    }
+                }
+            },
+            y: {
+                ticks: {
+                    font: {
+                        size: 15
+                    }
+                }
+            }
+        }
     }
 });
 const graficoReservas = document.getElementById("graficoReservas");
@@ -49,9 +97,18 @@ const reservas = new Chart(graficoReservas, {
             ]
         }]
     },
-    options: {
-        responsive: true,
-        maintainAspectRatio: true
+   options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+        legend: {
+            labels: {
+                font: {
+                    size: 16
+                }
+            }
+        }
+    }
     }
 });
 const tablaReservas = new DataTable("#tablaReservas", {

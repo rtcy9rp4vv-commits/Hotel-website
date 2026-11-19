@@ -7,6 +7,35 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@4.0.0-rc4/dist/css/adminlte.min.css">
+    <style>
+    body {
+        font-size: 17px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    h5 {
+        font-size: 21px;
+    }
+
+    p {
+        font-size: 17px;
+    }
+
+    .table {
+        font-size: 17px;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+</style>
 </head>
 <body class="layout-fixed sidebar-expand-lg bg-body-tertiary">
     <div class="app-wrapper">
@@ -46,14 +75,14 @@
         <h1>Panel Administrativo</h1>
         <p>Hotel Mundo de Perezosos</p>
     </header>
-    <main class="container mt-4">
+    <main class="container-fluid px-4 mt-4">
         <h2>Bienvenido, Administrador</h2>
         <p>Seleccione una opcion para administrar el hotel.</p>
         
 <div class="row mb-3">
 
     <div class="col-md-4">
-        <div class="card p-3 text-center">
+        <div class="card p-3 text-center bg-success-subtle">
             <h5>Tipos de habitación</h5>
             <h2 class="text-success">3</h2>
             <p>Disponibles en el catálogo</p>
@@ -61,7 +90,7 @@
     </div>
 
     <div class="col-md-4">
-        <div class="card p-3 text-center">
+        <div class="card p-3 text-center bg-warning-subtle">
             <h5>Reservas registradas</h5>
             <h2 class="text-success">3</h2>
             <p>Reservas de ejemplo</p>
@@ -69,7 +98,7 @@
     </div>
 
     <div class="col-md-4">
-        <div class="card p-3 text-center">
+        <div class="card p-3 text-center bg-info-subtle">
             <h5>Reservas confirmadas</h5>
             <h2 class="text-success">1</h2>
             <p>Confirmadas en la tabla</p>
@@ -124,10 +153,10 @@
         <section class="card p-3 mb-3">
             <h3>Tipos de reservas mas populares</h3>
             <p>Distribución de las reservas según el tipo de habitación.</p>
-            <div style="max-width: 600px; margin: auto;">
+            <div style="width: 100%; max-width: 700px; height: 350px; margin: auto;">
                 <canvas id="graficoReservas"></canvas>
             </div>
-            
+            j
         </section>
         <section class="card p-3 mb-3">
             <h3>Listado de reservas</h3>
