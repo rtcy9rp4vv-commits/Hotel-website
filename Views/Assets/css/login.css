@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    font-size: 18px;
+}
+
+.login-contenedor {
+    padding: 0;
+}
+
+.login-fila {
+    margin: 0;
+    min-height: 100vh;
+    background-image: url("../img/perezoso.jpg");
+    background-size: 70% 100%;
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+.login-panel {
+    width: 30%;
+    background-color: #d4e5d0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.card {
+    width: 100%;
+    max-width: 450px;
+    border: none;
+    flex: 1;
+    background-color: transparent;
+}
+
+.card h2 {
+    font-size: 32px;
+}
+
+.form-label {
+    font-size: 20px;
+}
+
+.form-control {
+    font-size: 18px;
+    padding: 14px;
+}
+
+.btn {
+    font-size: 20px;
+    padding: 14px;
+}
+
+@media (max-width: 767px) {
+    .login-panel {
+        width: 100%;
+    }
+}
+.nombre-hotel {
+    color: #245c3b;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+}
